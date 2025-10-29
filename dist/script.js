@@ -9,6 +9,11 @@ function domLoaded() {
       addBtnClick();
     }
   });
+
+  let doneButtons = document.querySelectorAll(".done-btn");
+  doneButtons.forEach(button => {
+    button.addEventListener("click", removeTask);
+  });
 }
 
 function addBtnClick() {
